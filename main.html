@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieHub - Order Food</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+       
+        .user-bar {
+            background: linear-gradient(90deg, #004E89, #FF6B35);
+            color: white;
+            padding: 8px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+        .user-bar a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            padding: 5px 14px;
+            border: 1px solid rgba(255,255,255,0.5);
+            border-radius: 20px;
+            font-size: 13px;
+            transition: 0.2s;
+        }
+        .user-bar a:hover {
+            background: white;
+            color: #FF6B35;
+        }
+        .user-bar .welcome-text i { margin-right: 6px; }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== USER BAR ===== -->
+    <div class="user-bar">
+        <span class="welcome-text">
+            <i class="fas fa-user-circle"></i>
+            <span id="user-greeting">Welcome, Guest</span>
+        </span>
+        <div style="display:flex;gap:10px;">
+            <a href="index.html">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+        </div>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-utensils"></i>
+            FoodieHub
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>Delicious Food Delivered Fast</h1>
+
+            <p>
+                Fresh and tasty food delivered to your doorstep.
+            </p>
+
+            <button class="hero-btn">
+                Explore Menu
+            </button>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop">
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories">
+
+        <h2>Popular Categories</h2>
+
+        <div class="category-container">
+
+            <div class="category-card" data-category="burger">
+                <i class="fa-solid fa-burger"></i>
+                <h3>Burgers</h3>
+            </div>
+
+            <div class="category-card" data-category="pizza">
+                <i class="fa-solid fa-pizza-slice"></i>
+                <h3>Pizza</h3>
+            </div>
+
+            <div class="category-card" data-category="chicken">
+                <i class="fa-solid fa-drumstick-bite"></i>
+                <h3>Chicken</h3>
+            </div>
+
+            <div class="category-card" data-category="dessert">
+                <i class="fa-solid fa-ice-cream"></i>
+                <h3>Desserts</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MENU ================= -->
+
+    <section class="menu-section" id="menu">
+
+        <h2>Our Special Menu</h2>
+
+        <div class="menu-container">
+
+            <!-- BURGERS -->
+            <div class="food-card" data-category="burger">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop">
+                <div class="food-info">
+                    <h3>Classic Burger</h3>
+                    <p>Cheesy grilled burger with fries.</p>
+                    <div class="food-bottom">
+                        <span>$12</span>
+                        <button class="add-cart">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-category="burger">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1200&auto=format&fit=crop">
+                <div class="food-info">
+                    <h3>Double Burger</h3>
+                    <p>Loaded double patty burger.</p>
+                    <div class="food-bottom">
+                        <span>$15</span>
+                        <button class="add-cart">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-category="burger">
+                <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?q=80&w=1200&auto=format&fit=crop">
+                <div class="food-info">
+                    <h3>Zinger Burger</h3>
+                    <p>Spicy crispy zinger burger.</p>
+                    <div class="food-bottom">
+                        <span>$14</span>
+                        <button class="add-cart">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PIZZA -->
+            <div class="food-card" data-category="pizza">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop">
+                <div class="food-info">
+                    <h3>Pepperoni Pizza</h3>
+                    <p>Hot cheesy pepperoni pizza.</p>
+                    <div class="food-bottom">
+                        <span>$18</span>
+                        <button class="add-cart">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-category="pizza">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop">
+                <div class="food-info">
+                    <h3>Italian Pizza</h3>
+                    <p>Italian style cheese pizza.</p>
+                    <div class="food-bottom">
+                        <span>$20</span>
+                        <button class="add-cart">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-category="pizza">
+                <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=1200&auto=format&fit=crop">
+                <div class="food-info">
+                    <h3>Cheese Pizza</h3>
+                    <p>Extra cheese loaded pizza.</p>
+                    <div class="food-bottom">
+                        <span>$16</span>
+                        <button class="add-cart">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHICKEN -->
+            <div class="food-card" data-category="chicken">
+                <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=1200&auto=format&fit=crop">
+                <div class="food-info">
+                    <h3>Chicken Steak</h3>
+                    <p>Juicy grilled chicken steak.</p>
+                    <div class="food-bottom">
+                        <span>$22</span>
+                        <button class="add-cart">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-category="chicken">
+                <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=1200&auto=format&fit=crop">
+                <div class="food-info">
+                    <h3>Fried Chicken</h3>
+                    <p>Crispy fried chicken bucket.</p>
+                    <div class="food-bottom">
+                        <span>$19</span>
+                        <button class="add-cart">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-category="chicken">
+                <img src="https://plus.unsplash.com/premium_photo-1672498193267-4f0e8c819bc8?q=80&w=1200&auto=format&fit=crop">
+                <div class="food-info">
+                    <h3>Chicken Wings</h3>
+                    <p>Spicy chicken wings combo.</p>
+                    <div class="food-bottom">
+                        <span>$17</span>
+                        <button class="add-cart">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DESSERTS -->
+            <div class="food-card" data-category="dessert">
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=1200&auto=format&fit=crop">
+                <div class="food-info">
+                    <h3>Ice Cream</h3>
+                    <p>Cold creamy vanilla ice cream.</p>
+                    <div class="food-bottom">
+                        <span>$8</span>
+                        <button class="add-cart">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-category="dessert">
+                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1200&auto=format&fit=crop">
+                <div class="food-info">
+                    <h3>Donuts</h3>
+                    <p>Sweet chocolate donuts pack.</p>
+                    <div class="food-bottom">
+                        <span>$9</span>
+                        <button class="add-cart">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-category="dessert">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200&auto=format&fit=crop">
+                <div class="food-info">
+                    <h3>Chocolate Cake</h3>
+                    <p>Soft creamy chocolate cake.</p>
+                    <div class="food-bottom">
+                        <span>$11</span>
+                        <button class="add-cart">Add</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+        <p>© 2026 FoodieHub | All Rights Reserved</p>
+    </footer>
+
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+    <script>
+        // Show logged-in user's name
+        (function() {
+            const userData = localStorage.getItem('fh_current_user');
+            if (userData) {
+                const user = JSON.parse(userData);
+                document.getElementById('user-greeting').textContent =
+                    'Welcome, ' + (user.firstName || user.username || 'User') + '!';
+            }
+        })();
+    </script>
+
+</body>
+
+</html>
