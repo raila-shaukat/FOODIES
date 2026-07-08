@@ -1,12 +1,12 @@
 # 🍔 FOODIES - Food Ordering Web Application
 
-A full-stack food ordering web application developed using **Node.js, Express.js, MongoDB, EJS, Bootstrap, HTML, CSS, and JavaScript**. The application provides separate **User** and **Admin** dashboards, offering a complete food ordering experience along with an admin management system powered by CRUD operations.
+A full-stack food ordering web application developed using **Node.js, Express.js, MongoDB, HTML5, CSS3, and JavaScript**. The application provides separate **User** and **Admin** dashboards, offering a complete food ordering experience along with an admin management system powered by CRUD operations.
 
 ---
 
 ## 📌 Project Overview
 
-FOODIES is designed to simplify the online food ordering process. Customers can browse the menu, view food items, and place orders through an intuitive interface, while administrators can efficiently manage the application's content through a dedicated dashboard.
+FOODIES is designed to simplify the online food ordering process. Customers can browse the menu, view food items, Add to cart items and place orders through an intuitive interface, while administrators can efficiently manage the application's content through a dedicated dashboard.
 
 The project follows the **MVC (Model-View-Controller)** architecture, making the code organized, scalable, and easier to maintain.
 
