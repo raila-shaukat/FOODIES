@@ -135,6 +135,9 @@ http://localhost:3000
 ### Home Page
 ![Home](screenshots/HomePage.png)
 
+### Menu Page
+![Home](screenshots/MenuPage.png)
+
 ### Admin Dashboard
 ![Admin Dashboard](screenshots/adminDashboard.png)
 
